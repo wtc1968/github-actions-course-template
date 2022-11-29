@@ -7,8 +7,8 @@ describe('App', () => {
       const data = await fs.readFile('./public/main.js', 'utf8');
       expect(data).toMatchSnapshot()
     } catch (err) {
-      throw
-    })
+      throw(err)
+    }
   })
 })
 
