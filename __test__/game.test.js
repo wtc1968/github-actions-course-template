@@ -3,12 +3,8 @@ const fs = require('fs')
 
 describe('App', () => {
   it('Contains the compiled JavaScript', async () => {
-    try {
-      const data = await fs.readFile('./public/main.js', 'utf8');
+      const data = await fs.readFile('./public/main.js', 'utf8')
       expect(data).toMatchSnapshot()
-    } catch (err) {
-      throw(err)
-    }
   })
 })
 
